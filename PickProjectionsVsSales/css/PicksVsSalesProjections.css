@@ -1,0 +1,104 @@
+.date-label-start{
+    padding-right: 5px;
+}
+
+.date-label-end{
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.border-blue{
+    border-color: rgb(107, 184, 246)
+}
+
+.dateRange-button{
+    padding-right: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.picksVsSaleProjection-div{
+    padding: 20px;
+}
+
+.variety-collapse-row{
+    display:flex;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.picksVsSaleProjection-h3{
+    padding-right: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sm-pad-left{
+    padding-left: 3px;
+}
+
+.med-pad-right{
+    padding-right: 50px;
+}
+
+.tooltip-inner{
+    width: 350px;
+    font-size: 12px;
+    background-color: rgb(111, 184, 231);
+}
+
+.sticky-top{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/*bootStrap ovverides*/
+.picksVsSaleProjection-table{
+    font-size: 15px;
+    line-height: 12px;
+}
+
+.type-container{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.redText{
+    color: red;
+}
+
+.variety-collapse{
+    border: 5px solid rgb(107, 184, 246);
+}
+
+.active-farmnet-Color{
+    background-color: rgba(238, 204, 21, 0.88);
+    padding-left: 10px;
+}
+
+.collapse-control{
+    transition: .3s transform ease-in-out;
+}
+
+.cursor-change{
+    cursor: pointer;
+}
+
+.rounded-border{
+    border-radius: 15px;
+}
+
+.td-align-right{
+    text-align: center;
+}
+
+/*Jquery Loading override */
+.loading-overlay-content {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  display: table-cell;
+  vertical-align: top;
+}
