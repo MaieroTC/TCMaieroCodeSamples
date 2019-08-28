@@ -181,6 +181,20 @@
     <cfdump var = '#salesVarProj#'>
 </cfif>
 
+<cfif IsDefined("form.getVarietyInfoController")>
+    <cfset gradeVarProj = GradeController.GetVarietyGradeProjectionsByTypeVareityAndDate(form.startDate, form.endDate, form.flowerType, form.flowerVariety)>
+    
+    <cfdump var = '#gradeVarProj#'>
+</cfif>
+
+
+<cfif IsDefined("form.getVarietyInfoByColorController")>
+    <cfset gradeVarProj = GradeController.GetVarietyGradeProjectionsByColor(form.startDate, form.endDate, form.flowerType, form.colorCode)>
+    
+    <cfdump var = '#gradeVarProj#'>
+</cfif>
+
+
 <!---***************************************** TC - PAGE*********************** --->
 <h2>Base Pick vs Sale</h2>
 
@@ -440,4 +454,21 @@
     <input type = "submit" name="getSaleProjectionsVarietyByGrade" value="Submit"/>
 </form>
 
+<strong>Get Variety Info Controller</strong>
+<form name="getVarietyInfoController" action="TestPage.cfm" method="POST">
+    Start Date:<input type="date" name = "startDate" /> <br />
+    End Date:<input type="date" name = "endDate" /> <br />
+    FlowerType:<input type="text" name="flowerType" /><br />
+    FlowerVariety:<input type="text" name="flowerVariety" /><br />
+    <input type = "submit" name="getVarietyInfoController" value="Submit"/>
+</form>
+
+<strong>Get Varieties By Color Info Controller</strong>
+<form name="getVarietyInfoByColorController" action="TestPage.cfm" method="POST">
+    Start Date:<input type="date" name = "startDate" /> <br />
+    End Date:<input type="date" name = "endDate" /> <br />
+    FlowerType:<input type="text" name="flowerType" /><br />
+    ColorCode:<input type="text" name="colorCode" /><br />
+    <input type = "submit" name="getVarietyInfoByColorController" value="Submit"/>
+</form>
 <cfinclude template="/MM/MainFooter.cfm">
