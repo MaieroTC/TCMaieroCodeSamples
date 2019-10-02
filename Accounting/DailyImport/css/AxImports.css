@@ -1,0 +1,44 @@
+table.dataTable tr.dtrg-end td{
+    text-align: right;
+    font-weight: normal;
+}
+
+
+
+.alert-Info-message{
+    margin-bottom:15px;
+}
+
+.alert-width{
+    width:90%;
+}
+
+/*This is needed for our smaller laptop screens*/
+.min-input-custom{
+    min-width: 150px;
+}
+
+.min-input-group-custom{
+    min-width: 155;
+}
+
+.page-title{
+    padding-bottom: 10px;
+}
+
+.validation{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+
+/*****BOOTSTRAP OVERRIDE*********/
+.table-container{
+    margin-left: 100px;
+    width:auto;
+}
+
+.page-title-min-bot{
+    margin-bottom: 10px;
+}

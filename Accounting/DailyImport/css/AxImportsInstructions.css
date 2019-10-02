@@ -1,0 +1,14 @@
+ol {
+    font-weight: bold;
+}
+li p { 
+    font-weight: normal; 
+}
+
+.intro{
+    margin: 20px;
+}
+
+.alert{
+    width: 90%
+}
